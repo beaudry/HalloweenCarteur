@@ -1,0 +1,34 @@
+.carte {
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 4px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carte-contenu {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carte-pied {
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carte h2 {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.carte p {
+    margin: 0;
+}

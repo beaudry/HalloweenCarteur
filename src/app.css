@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&family=Creepster&family=Sedgwick+Ave+Display&display=swap');
+
+body {
+  font-family: Gluten, cursive;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h1,
+h2 {
+  font-family: 'Creepster', cursive;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.preact:hover {
+  filter: drop-shadow(0 0 2em #673ab8aa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+#grille {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.carte-conteneur {
+  margin-bottom: 1cm;
+}
