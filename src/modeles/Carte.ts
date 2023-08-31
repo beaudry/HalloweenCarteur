@@ -3,7 +3,7 @@ import Categorie from "./Categorie"
 type Carte = {
     categorie?: Categorie;
     cycle?: string;
-    description: string,
+    description: string | string[],
     titre?: string,
 }
 

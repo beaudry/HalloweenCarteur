@@ -9,7 +9,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h1,
@@ -24,27 +24,6 @@ h2 {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.preact:hover {
-  filter: drop-shadow(0 0 2em #673ab8aa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 #grille {
   display: flex;
   flex-wrap: wrap;
@@ -52,5 +31,11 @@ h2 {
 }
 
 .carte-conteneur {
-  margin-bottom: 1cm;
+  margin-bottom: 2rem;
+}
+
+@media print {
+  .ne-pas-imprimer {
+    display: none;
+  }
 }

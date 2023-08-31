@@ -10,8 +10,10 @@ function obtenirCartesDeLaCategorie(categorie: Categorie) {
 function App() {
   return (
     <div>
-      <h1>Halloween Carteur</h1>
-      <p>Nombre de cartes: {cartes.length}</p>
+      <div className="ne-pas-imprimer">
+        <h1>Halloween Carteur</h1>
+        <p>Nombre de cartes: {cartes.length}</p>
+      </div>
 
       <div id="grille">
         {cartes.map(carte => <div class="carte-conteneur"><CarteHalloween carte={carte} /></div>)}
