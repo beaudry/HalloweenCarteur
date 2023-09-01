@@ -33,7 +33,7 @@ function Pigeur({ cartes, titre }: PigeurProps) {
                 Piger une carte <span className="nom-categorie">{titre}</span>
                 <span className="nombre-restantes">({talon.length} restantes)</span>
             </button>
-            {indexCartePigee && (
+            {indexCartePigee !== undefined && (
                 <dialog open onClick={() => setIndexCartePigee(undefined)}>
                     <CarteHalloween carte={cartes[indexCartePigee]} />
                 </dialog>
