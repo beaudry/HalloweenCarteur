@@ -7,17 +7,19 @@
     height: 175px;
     display: flex;
     flex-direction: column;
-    padding: 0 0.75rem 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
 .carte-entete {
-    line-height: 2rem;
+    padding-inline: 0.75em;
+    line-height: 2;
     display: flex;
     justify-content: space-between;
 }
 
 .carte-contenu {
     flex: 1;
+    padding-inline: 0.75rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,6 +32,17 @@
     margin-left: -0.5rem;
     margin-right: -0.5rem;
     margin-bottom: 0.5rem;
+}
+
+@media (pointer:none),
+(pointer:coarse) {
+    dialog .carte {
+        font-size: 200%;
+    }
+
+    dialog .carte h2 {
+        font-size: 200%;
+    }
 }
 
 .carte p {
