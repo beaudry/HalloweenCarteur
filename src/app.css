@@ -6,11 +6,9 @@ body {
 
 h1 {
   font-size: 4rem;
+  margin-block: 1rem;
 }
 
-h2 {
-  font-size: 2.5rem;
-}
 
 h1,
 h2 {
@@ -24,6 +22,17 @@ h2 {
   text-align: center;
 }
 
+#decomptes {
+  margin-bottom: 2rem;
+}
+
+#conteneur-boutons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
 #grille {
   display: flex;
   flex-wrap: wrap;
@@ -31,6 +40,7 @@ h2 {
 }
 
 .carte-conteneur {
+  break-inside: avoid;
   margin-bottom: 2rem;
 }
 

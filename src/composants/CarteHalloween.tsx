@@ -17,8 +17,8 @@ function CarteHalloween({ carte }: CarteHalloweenProps) {
             }
         </div>
         <div className="carte-pied">
-            <span>Type: {carte.categorie}</span>
-            {carte.cycle && <span>Cycle: {carte.cycle}</span>}
+            <span>{carte.categorie}</span>
+            {carte.cycle && <span>{carte.cycle}</span>}
         </div>
     </div>
 }
