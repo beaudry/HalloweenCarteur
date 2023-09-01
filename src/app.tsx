@@ -13,6 +13,9 @@ const cartesChaos = obtenirCartesDeLaCategorie(Categorie.chaos);
 const cartesDefi = obtenirCartesDeLaCategorie(Categorie.defi);
 const cartesVerite = obtenirCartesDeLaCategorie(Categorie.verite);
 
+const nombreTotalDeCartes = cartes.length;
+const nombreDeCartesAvecTitre = cartes.filter(carte => carte.titre).length;
+
 function App() {
   return (
     <div>
@@ -20,8 +23,8 @@ function App() {
         <h1>Halloween Carteur</h1>
 
         <div id="decomptes">
-          <div>Nombre de cartes: {cartes.length}</div>
-          <div>Nombre de cartes sans titre: {cartes.filter(carte => !carte.titre).length}</div>
+          <div>Nombre de cartes: {nombreTotalDeCartes}</div>
+          <div>Nombre de cartes sans titre: {nombreTotalDeCartes - nombreDeCartesAvecTitre}</div>
         </div>
 
         <div id="conteneur-boutons">
