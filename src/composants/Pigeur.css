@@ -1,6 +1,16 @@
 .nombre-restantes {
     display: block;
     margin-top: 0.5rem;
+    font-size: 80%;
+}
+
+.nom-categorie {
+    color: #ff7700;
+}
+
+.bouton-pigeur {
+    font-size: 125%;
+    padding: 1.5rem;
 }
 
 dialog {

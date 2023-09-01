@@ -29,8 +29,8 @@ function Pigeur({ cartes, titre }: PigeurProps) {
 
     return (
         <div>
-            <button onClick={pigerUneCarte}>
-                Piger une carte {titre}
+            <button className="bouton-pigeur" onClick={pigerUneCarte}>
+                Piger une carte <span className="nom-categorie">{titre}</span>
                 <span className="nombre-restantes">({talon.length} restantes)</span>
             </button>
             {cartePigee && (
