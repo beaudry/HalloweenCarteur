@@ -10,20 +10,20 @@ export type PigeurProps = {
 }
 
 function Pigeur({ cartes, titre }: PigeurProps) {
-    const [talon, setTalon] = useState<Carte[]>([]);
-    const [cartePigee, setCartePigee] = useState<Carte | undefined>();
+    const [talon, setTalon] = useState<number[]>([]);
+    const [indexCartePigee, setIndexCartePigee] = useState<number | undefined>();
 
     function pigerUneCarte() {
         const nouveauTalon = talon.slice();
         const cartePigee = nouveauTalon.shift();
 
         setTalon(nouveauTalon);
-        setCartePigee(cartePigee)
+        setIndexCartePigee(cartePigee)
     }
 
     useEffect(() => {
         if (!talon.length) {
-            setTalon(melangerVecteur(cartes));
+            setTalon(melangerVecteur(cartes.map((_, index) => index)));
         }
     }, [cartes, talon])
 
@@ -33,9 +33,9 @@ function Pigeur({ cartes, titre }: PigeurProps) {
                 Piger une carte <span className="nom-categorie">{titre}</span>
                 <span className="nombre-restantes">({talon.length} restantes)</span>
             </button>
-            {cartePigee && (
-                <dialog open onClick={() => setCartePigee(undefined)}>
-                    <CarteHalloween carte={cartePigee} />
+            {indexCartePigee && (
+                <dialog open onClick={() => setIndexCartePigee(undefined)}>
+                    <CarteHalloween carte={cartes[indexCartePigee]} />
                 </dialog>
             )}
         </div>
