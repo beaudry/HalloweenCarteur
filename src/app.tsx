@@ -25,6 +25,7 @@ function App() {
         <div id="decomptes">
           <div>Nombre de cartes: {nombreTotalDeCartes}</div>
           <div>Nombre de cartes sans titre: {nombreTotalDeCartes - nombreDeCartesAvecTitre}</div>
+          <div><progress value={nombreDeCartesAvecTitre} max={nombreTotalDeCartes} /> {(nombreDeCartesAvecTitre / nombreTotalDeCartes * 100).toFixed(2)}%</div>
         </div>
 
         <div id="conteneur-boutons">
