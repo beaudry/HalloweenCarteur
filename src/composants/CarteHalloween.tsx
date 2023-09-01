@@ -7,6 +7,10 @@ export type CarteHalloweenProps = {
 
 function CarteHalloween({ carte }: CarteHalloweenProps) {
     return <div className="carte">
+        <div className="carte-entete">
+            <span>{carte.categorie}</span>
+            {carte.cycle && <span>{carte.cycle}</span>}
+        </div>
         <div className="carte-contenu">
             <h2>{carte.titre ?? "Aucun titre :("}</h2>
             {Array.isArray(carte.description) ?
@@ -15,10 +19,6 @@ function CarteHalloween({ carte }: CarteHalloweenProps) {
                 </ul>
                 : <p>{carte.description}</p>
             }
-        </div>
-        <div className="carte-pied">
-            <span>{carte.categorie}</span>
-            {carte.cycle && <span>{carte.cycle}</span>}
         </div>
     </div>
 }
