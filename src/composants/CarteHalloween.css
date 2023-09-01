@@ -32,17 +32,6 @@
     margin-bottom: 0.5rem;
 }
 
-@media (pointer:none),
-(pointer:coarse) {
-    dialog .carte {
-        font-size: 200%;
-    }
-
-    dialog .carte h2 {
-        font-size: 200%;
-    }
-}
-
 .carte p {
     margin: 0;
 }

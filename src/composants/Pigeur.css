@@ -15,5 +15,8 @@ dialog {
     right: 0;
     top: 0;
     width: auto;
-    zoom: 2;
+}
+
+dialog>* {
+    transform: scale(2);
 }
