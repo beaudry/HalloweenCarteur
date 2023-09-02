@@ -21,9 +21,17 @@ function Pigeur({ cartes, titre }: PigeurProps) {
         setIndexCartePigee(cartePigee)
     }
 
+    function genererNouveauTalon() {
+        setTalon(melangerVecteur(cartes.map((_, index) => index)))
+    }
+
+    useEffect(() => {
+        genererNouveauTalon();
+    }, [cartes.length])
+
     useEffect(() => {
         if (!talon.length) {
-            setTalon(melangerVecteur(cartes.map((_, index) => index)));
+            genererNouveauTalon()
         }
     }, [cartes, talon])
 
