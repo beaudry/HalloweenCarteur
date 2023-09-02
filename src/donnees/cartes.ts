@@ -79,7 +79,7 @@ const cartes: Carte[] = [
     { categorie: Categorie.verite, cycle: "Mise en situation", description: "Si tu étais un fantôme, qu'hanterais-tu?" },
     { categorie: Categorie.verite, cycle: "Mise en situation", description: "Tu reçois un bébé zombie, que tu ne peux pas donner. Que fais-tu?" },
     { categorie: Categorie.verite, cycle: "Mise en situation", description: "Un tueur en série est dans ta maison/appartement. Où vas-tu te réfugier?" },
-    { categorie: Categorie.verite, cycle: "Mise en situation", description: "Une succube apparaît devant toi et désire ton «\u00a0«\u00a0essence\u00a0»\u00a0». Lui donnes-tu?" },
+    { categorie: Categorie.verite, cycle: "Mise en situation", description: "Une succube apparaît devant toi et désire ton « « essence » ». Lui donnes-tu?" },
     { categorie: Categorie.verite, cycle: "Peur", description: "Quel animal te fait le plus peur?" },
     { categorie: Categorie.verite, cycle: "Peur", description: "Quel film t'a le plus traumatisé quand tu étais enfant?" },
     { categorie: Categorie.verite, cycle: "Peur", description: "Quel monstre tes parents utilisaient-ils pour te faire peur?" },
