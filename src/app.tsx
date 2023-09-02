@@ -29,10 +29,10 @@ function App() {
         </div>
 
         <div id="conteneur-boutons">
-          <Pigeur cartes={cartesAide} titre="Aide" />
-          <Pigeur cartes={cartesChaos} titre="Chaos" />
-          <Pigeur cartes={cartesDefi} titre="Défi" />
-          <Pigeur cartes={cartesVerite} titre="Vérité" />
+          <Pigeur cartes={cartesAide} titre={Categorie.aide} />
+          <Pigeur cartes={cartesChaos} titre={Categorie.chaos} />
+          <Pigeur cartes={cartesDefi} titre={Categorie.defi} />
+          <Pigeur cartes={cartesVerite} titre={Categorie.verite} />
         </div>
       </div>
 
