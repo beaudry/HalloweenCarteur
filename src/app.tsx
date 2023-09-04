@@ -12,9 +12,10 @@ const cartesAide = obtenirCartesDeLaCategorie(Categorie.aide);
 const cartesChaos = obtenirCartesDeLaCategorie(Categorie.chaos);
 const cartesDefi = obtenirCartesDeLaCategorie(Categorie.defi);
 const cartesVerite = obtenirCartesDeLaCategorie(Categorie.verite);
+const cartesSansTitre = cartes.filter(carte => !carte.titre);
 
 const nombreTotalDeCartes = cartes.length;
-const nombreDeCartesAvecTitre = cartes.filter(carte => carte.titre).length;
+const nombreDeCartesAvecTitre = nombreTotalDeCartes - cartesSansTitre.length;
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Pigeur cartes={cartesChaos} titre={Categorie.chaos} />
           <Pigeur cartes={cartesDefi} titre={Categorie.defi} />
           <Pigeur cartes={cartesVerite} titre={Categorie.verite} />
+          <Pigeur cartes={cartesSansTitre} titre="sans titre" />
         </div>
       </div>
 
