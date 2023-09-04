@@ -5,7 +5,7 @@ export type CarteHalloweenProps = {
     carte: Carte
 }
 
-const espaceFineInsecable = "\u202f"
+const espaceFineInsecable = "\u202f";
 const ajouterDesEspaces = true;
 
 function ajouterLesEspacesSiDesire(chaineAAjuster: string) {
