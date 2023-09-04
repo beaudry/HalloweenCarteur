@@ -24,7 +24,7 @@ function CarteHalloween({ carte }: CarteHalloweenProps) {
             {carte.cycle && <span>{carte.cycle}</span>}
         </div>
         <div className="carte-contenu">
-            <h2>{ajouterLesEspacesSiDesire(carte.titre ?? "Aucun titre :(")}</h2>
+            <h2>{ajouterLesEspacesSiDesire(!!carte.titre ? carte.titre : "Aucun titre :(")}</h2>
             {Array.isArray(carte.description) ?
                 <ul>
                     {carte.description.map(itemDescription => <li key={itemDescription}>{itemDescription}</li>)}
