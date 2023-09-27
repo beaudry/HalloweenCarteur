@@ -34,7 +34,6 @@ function App() {
           <Pigeur cartes={cartesChaos} titre={Categorie.chaos} />
           <Pigeur cartes={cartesDefi} titre={Categorie.defi} />
           <Pigeur cartes={cartesVerite} titre={Categorie.verite} />
-          <Pigeur cartes={cartesSansTitre} titre="sans titre" />
         </div>
       </div>
 
