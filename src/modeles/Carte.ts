@@ -1,10 +1,10 @@
 import Categorie from "./Categorie"
 
 type Carte = {
-    categorie?: Categorie;
-    cycle?: string;
+    categorie: Categorie;
+    cycle: string;
     description: string | string[],
-    titre?: string,
+    titre: string,
 }
 
 export default Carte;

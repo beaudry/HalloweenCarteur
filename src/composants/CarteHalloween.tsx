@@ -1,5 +1,6 @@
 import './CarteHalloween.css'
 import Carte from "../modeles/Carte"
+import Filigrane from './Filigrane';
 
 export type CarteHalloweenProps = {
     carte: Carte
@@ -19,6 +20,7 @@ function ajouterLesEspacesSiDesire(chaineAAjuster: string) {
 
 function CarteHalloween({ carte }: CarteHalloweenProps) {
     return <div className="carte">
+        <Filigrane categorie={carte.categorie} />
         <div className="carte-entete">
             <span>{carte.categorie}</span>
             {carte.cycle && <span>{carte.cycle}</span>}
