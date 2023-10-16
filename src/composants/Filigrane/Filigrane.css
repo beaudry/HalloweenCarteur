@@ -1,8 +1,0 @@
-.filigrane {
-    filter: grayscale();
-    left: -2px;
-    opacity: 0.2;
-    position: absolute;
-    top: -2px;
-    z-index: -1;
-}

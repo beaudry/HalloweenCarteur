@@ -16,13 +16,17 @@ h2 {
 }
 
 #app {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-#decomptes {
+#panneau-de-controle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
   margin-bottom: 2rem;
 }
 
@@ -33,10 +37,14 @@ h2 {
   gap: 1rem;
 }
 
-#grille {
+.grille {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.grille-inversee {
+  flex-direction: row-reverse;
 }
 
 .carte-conteneur {

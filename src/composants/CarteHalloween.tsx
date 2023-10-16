@@ -3,7 +3,8 @@ import Carte from "../modeles/Carte"
 import Filigrane from './Filigrane';
 
 export type CarteHalloweenProps = {
-    carte: Carte
+    carte: Carte,
+    verso: boolean,
 }
 
 const espaceFineInsecable = "\u202f";
@@ -18,9 +19,15 @@ function ajouterLesEspacesSiDesire(chaineAAjuster: string) {
 
 }
 
-function CarteHalloween({ carte }: CarteHalloweenProps) {
+function CarteHalloween({ carte, verso }: CarteHalloweenProps) {
+    if (verso) {
+        return <div className="carte">
+            <Filigrane categorie={carte.categorie} className="image" />
+        </div>
+    }
+
     return <div className="carte">
-        <Filigrane categorie={carte.categorie} />
+        <Filigrane categorie={carte.categorie} className="image filigrane" />
         <div className="carte-entete">
             <span>{carte.categorie}</span>
             {carte.cycle && <span>{carte.cycle}</span>}

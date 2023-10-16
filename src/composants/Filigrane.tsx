@@ -1,13 +1,9 @@
-import "./Filigrane.css"
-import Categorie from "../../modeles/Categorie";
-import aide from '../../images/aide.png';
-import chaos from '../../images/chaos.png';
-import defi from '../../images/defi.png';
-import verite from '../../images/verite.png';
-
-export type FiligraneProps = {
-    categorie: Categorie,
-}
+import { JSX } from 'preact'
+import Categorie from "../modeles/Categorie";
+import aide from '../images/aide.png';
+import chaos from '../images/chaos.png';
+import defi from '../images/defi.png';
+import verite from '../images/verite.png';
 
 function obtenirCheminImage(categorie: Categorie) {
     if (categorie === Categorie.aide) {
@@ -27,17 +23,18 @@ function obtenirCheminImage(categorie: Categorie) {
     }
 }
 
-let fonce = false;
+export type FiligraneProps = {
+    categorie: Categorie,
+} & JSX.HTMLAttributes<HTMLImageElement>
 
-function Filigrane({ categorie }: FiligraneProps) {
-    fonce = !fonce;
+function Filigrane({ categorie, ...others }: FiligraneProps) {
     const cheminImage = obtenirCheminImage(categorie);
 
     if (!cheminImage) {
         return null;
     }
 
-    return <img className="filigrane" src={cheminImage} />;
+    return <img src={cheminImage} {...others} />;
 }
 
 export default Filigrane;

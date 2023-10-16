@@ -1,3 +1,4 @@
+import { useState } from 'preact/hooks';
 import './app.css'
 import CarteHalloween from './composants/CarteHalloween';
 import Pigeur from './composants/Pigeur';
@@ -18,15 +19,22 @@ const nombreTotalDeCartes = cartes.length;
 const nombreDeCartesAvecTitre = nombreTotalDeCartes - cartesSansTitre.length;
 
 function App() {
+  const [pourImpression, setPourImpression] = useState(false);
+
   return (
     <div>
       <div className="ne-pas-imprimer">
         <h1>Halloween Carteur</h1>
 
-        <div id="decomptes">
-          <div>Nombre de cartes: {nombreTotalDeCartes}</div>
-          <div>Nombre de cartes sans titre: {nombreTotalDeCartes - nombreDeCartesAvecTitre}</div>
-          <div><progress value={nombreDeCartesAvecTitre} max={nombreTotalDeCartes} /> {(nombreDeCartesAvecTitre / nombreTotalDeCartes * 100).toFixed(2)}%</div>
+        <div id="panneau-de-controle">
+          <div>
+            <div>Nombre de cartes: {nombreTotalDeCartes}</div>
+            <div>Nombre de cartes sans titre: {nombreTotalDeCartes - nombreDeCartesAvecTitre}</div>
+            <div><progress value={nombreDeCartesAvecTitre} max={nombreTotalDeCartes} /> {(nombreDeCartesAvecTitre / nombreTotalDeCartes * 100).toFixed(2)}%</div>
+          </div>
+          <div>
+            <label><input type="checkbox" checked={pourImpression} onChange={() => setPourImpression(ancienPourImpression => !ancienPourImpression)} /> Afficher le verso des cartes</label>
+          </div>
         </div>
 
         <div id="conteneur-boutons">
@@ -37,8 +45,8 @@ function App() {
         </div>
       </div>
 
-      <div id="grille">
-        {cartes.map(carte => <div class="carte-conteneur"><CarteHalloween carte={carte} /></div>)}
+      <div className={pourImpression ? "grille grille-inversee" : "grille"}>
+        {cartes.map(carte => <div class="carte-conteneur"><CarteHalloween carte={carte} verso={pourImpression} /></div>)}
       </div>
     </div>
   )
