@@ -4,7 +4,7 @@ import Filigrane from './Filigrane';
 
 export type CarteHalloweenProps = {
     carte: Carte,
-    verso: boolean,
+    verso?: boolean,
 }
 
 const espaceFineInsecable = "\u202f";
