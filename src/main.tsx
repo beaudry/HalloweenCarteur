@@ -1,5 +1,18 @@
-import { render } from 'preact'
-import App from './app.tsx'
-import './index.css'
+import { render } from 'preact';
+import './index.css';
+import { Router, Route, LocationProvider } from 'preact-iso';
+import CartesConteneur from './conteneurs/CartesConteneur';
+import TableauConteneur from './conteneurs/TableauConteneur';
 
-render(<App />, document.getElementById('app')!)
+function Main() {
+    return (
+        <LocationProvider>
+            <Router>
+                <Route component={CartesConteneur} path='/HalloweenCarteur/' />
+                <Route component={TableauConteneur} path='/HalloweenCarteur/tableau' />
+            </Router>
+        </LocationProvider>
+    );
+}
+
+render(<Main />, document.getElementById('app')!);

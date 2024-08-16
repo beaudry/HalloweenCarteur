@@ -1,9 +1,9 @@
 import { useState } from 'preact/hooks';
-import './app.css'
-import CarteHalloween from './composants/CarteHalloween';
-import Pigeur from './composants/Pigeur';
-import cartes from './donnees/cartes';
-import Categorie from './modeles/Categorie';
+import './CartesConteneur.css'
+import CarteHalloween from '../composants/CarteHalloween';
+import Pigeur from '../composants/Pigeur';
+import cartes from '../donnees/cartes';
+import Categorie from '../modeles/Categorie';
 
 function obtenirCartesDeLaCategorie(categorie: Categorie) {
   return cartes.filter(carte => carte.categorie === categorie);
@@ -18,7 +18,7 @@ const cartesSansTitre = cartes.filter(carte => !carte.titre);
 const nombreTotalDeCartes = cartes.length;
 const nombreDeCartesAvecTitre = nombreTotalDeCartes - cartesSansTitre.length;
 
-function App() {
+function CartesConteneur() {
   const [pourImpression, setPourImpression] = useState(false);
 
   return (
@@ -52,4 +52,4 @@ function App() {
   )
 }
 
-export default App;
+export default CartesConteneur;
