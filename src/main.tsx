@@ -9,7 +9,7 @@ function Main() {
         <LocationProvider>
             <Router>
                 <Route component={CartesConteneur} path='/HalloweenCarteur/' />
-                <Route component={TableauConteneur} path='/HalloweenCarteur/tableau' />
+                <Route component={TableauConteneur} path='/HalloweenCarteur/plateau' />
             </Router>
         </LocationProvider>
     );
