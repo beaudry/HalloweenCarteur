@@ -62,7 +62,7 @@ const cartes: Carte[] = [
     { categorie: Categorie.defi, cycle: "Connaissances générales", description: "Donne le titre d'au moins deux des films qui jouent présentement sur les écrans.", titre: "Écran de protection" }, // Nouveau
     { categorie: Categorie.defi, cycle: "Connaissances générales", description: "Quel est le nom de la chanson qui joue présentement? Tu as dix secondes." }, // Nouveau
 
-    { categorie: Categorie.qui, cycle: "Film d'horreur", description: "Qui survivrait dans un film d'horreur", },
+    { categorie: Categorie.qui, cycle: "Film d'horreur", description: "Qui survivrait dans un film d'horreur?", },
     { categorie: Categorie.qui, cycle: "Film d'horreur", description: "Qui serait le premier à mourir dans un film d'horreur?", },
     { categorie: Categorie.qui, cycle: "Film d'horreur", description: "Qui serait le tueur dans un film d'horreur?", },
     { categorie: Categorie.qui, cycle: "Célébration", description: "Qui serait le premier à mourir dans un film d'horreur?", },
