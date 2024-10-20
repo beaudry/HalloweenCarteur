@@ -2,9 +2,9 @@ import Carte from "../modeles/Carte";
 import Categorie from "../modeles/Categorie";
 
 const cartes: Carte[] = [
-    { categorie: Categorie.aide, cycle: "Déplacements", description: "Avance d'une case.", titre: "Manque d'inspiration" },
-    { categorie: Categorie.aide, cycle: "Déplacements", description: "Échange de place avec le joueur de ton choix.", titre: "Merci d'avoir gardé ma place" },
-    { categorie: Categorie.aide, cycle: "Déplacements", description: "Échange de place avec le premier joueur.", titre: "Moi d'abord" },
+    { categorie: Categorie.qui, cycle: "Déplacements", description: "Avance d'une case.", titre: "Manque d'inspiration" },
+    { categorie: Categorie.qui, cycle: "Déplacements", description: "Échange de place avec le joueur de ton choix.", titre: "Merci d'avoir gardé ma place" },
+    { categorie: Categorie.qui, cycle: "Déplacements", description: "Échange de place avec le premier joueur.", titre: "Moi d'abord" },
     { categorie: Categorie.chaos, cycle: "« Solidarité »", description: "Tous les autres joueurs pigent une conséquence. Ceux qui échouent reculent de 2 cases.", titre: "Bouffons du roi" },
     { categorie: Categorie.chaos, cycle: "Bibi Party", description: "Jusqu'à ton prochain tour, les dés déplacent de la moitié du nombre de cases supposé, arrondi en haut.", titre: "Dé empoisonné" },
     { categorie: Categorie.defi, cycle: "Enquête", description: "Trouve quelqu'un qui a un chat chez lui.", titre: "Chat-rlatan" },
@@ -12,12 +12,12 @@ const cartes: Carte[] = [
     { categorie: Categorie.verite, cycle: "Halloween", description: "Qu'est-ce que la maison de riches donnait quand tu passais l'Halloween?", titre: "Butin" },
     { categorie: Categorie.verite, cycle: "Halloween", description: "Quel bonbon espérais-tu obtenir quand tu passais l'Halloween?", titre: "Désir" },
 
-    { categorie: Categorie.aide, cycle: "Déplacements", description: "Rejoue!", titre: "Encore!" },
-    { categorie: Categorie.aide, cycle: "Déplacements", description: "Relance ton prochain dé jusqu'à ce que le résultat soit supérieur à 3.", titre: "Osselet chanceux" },
-    { categorie: Categorie.aide, cycle: "Garde cette carte", description: "Utilise cette carte pour aller aux toilettes (les autres joueurs vont t'attendre).", titre: "Pause pipi" },
-    { categorie: Categorie.aide, cycle: "Garde cette carte", description: "Utilise cette carte pour réussir gratuitement une conséquence qui t'es assignée.", titre: "Oui merci!" },
-    { categorie: Categorie.aide, cycle: "Royauté", description: "Choisis un nom. Tous les joueurs doivent dorénavant t'appeler ainsi. Les contrevenants reculent d'une case.", titre: "Je s'appelle Groot" },
-    { categorie: Categorie.aide, cycle: "Voleur", description: "Jusqu'à ton prochain tour, tu peux obliger quelqu'un à avancer ton pion plutôt que le sien.", titre: "Possession" },
+    { categorie: Categorie.qui, cycle: "Déplacements", description: "Rejoue!", titre: "Encore!" },
+    { categorie: Categorie.qui, cycle: "Déplacements", description: "Relance ton prochain dé jusqu'à ce que le résultat soit supérieur à 3.", titre: "Osselet chanceux" },
+    { categorie: Categorie.qui, cycle: "Garde cette carte", description: "Utilise cette carte pour aller aux toilettes (les autres joueurs vont t'attendre).", titre: "Pause pipi" },
+    { categorie: Categorie.qui, cycle: "Garde cette carte", description: "Utilise cette carte pour réussir gratuitement une conséquence qui t'es assignée.", titre: "Oui merci!" },
+    { categorie: Categorie.qui, cycle: "Royauté", description: "Choisis un nom. Tous les joueurs doivent dorénavant t'appeler ainsi. Les contrevenants reculent d'une case.", titre: "Je s'appelle Groot" },
+    { categorie: Categorie.qui, cycle: "Voleur", description: "Jusqu'à ton prochain tour, tu peux obliger quelqu'un à avancer ton pion plutôt que le sien.", titre: "Possession" },
 
     { categorie: Categorie.chaos, cycle: "Bibi Party", description: "Jusqu'à ton prochain tour, les lancers de dés font reculer les pions.", titre: "Brouillard" },
     { categorie: Categorie.chaos, cycle: "Garde cette carte", description: "Utilise cette carte pour doubler la conséquence de quelqu'un. La punition est aussi doublée.", titre: "Portions doubles" },
