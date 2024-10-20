@@ -1,4 +1,4 @@
-const garderOrdre = false;
+const garderOrdre = true;
 
 function melangerVecteur<T>(vecteurOriginal: T[]) {
     if (garderOrdre) {
