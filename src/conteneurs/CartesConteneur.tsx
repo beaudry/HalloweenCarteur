@@ -45,8 +45,13 @@ function CartesConteneur() {
         </div>
       </div>
 
-      <div className={pourImpression ? "grille grille-inversee" : "grille"}>
-        {cartes.map(carte => <div class="carte-conteneur"><CarteHalloween carte={carte} verso={pourImpression} /></div>)}
+      <div className={"grille"}>
+        {cartes.map(carte => (
+          <div class="carte-conteneur">
+            <CarteHalloween carte={carte} />
+            {pourImpression && <CarteHalloween carte={carte} verso />}
+          </div>
+        ))}
       </div>
     </div>
   )

@@ -15,7 +15,7 @@ h2 {
 }
 
 #app {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -49,10 +49,16 @@ h2 {
 .carte-conteneur {
   break-inside: avoid;
   margin-bottom: 2rem;
+  display: flex;
+  gap: 2px;
 }
 
 @media print {
   .ne-pas-imprimer {
     display: none;
+  }
+
+  .carte-conteneur {
+    margin-bottom: 2px;
   }
 }
