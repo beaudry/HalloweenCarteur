@@ -28,10 +28,6 @@ function CarteHalloween({ carte, verso }: CarteHalloweenProps) {
 
     return <div className="carte">
         <Filigrane categorie={carte.categorie} className="image filigrane" />
-        <div className="carte-entete">
-            <span>{carte.categorie}</span>
-            {carte.cycle && <span>{carte.cycle}</span>}
-        </div>
         <div className="carte-contenu">
             <h2>{ajouterLesEspacesSiDesire(!!carte.titre ? carte.titre : "Aucun titre :(")}</h2>
             {Array.isArray(carte.description) ?
@@ -40,6 +36,9 @@ function CarteHalloween({ carte, verso }: CarteHalloweenProps) {
                 </ul>
                 : <p>{ajouterLesEspacesSiDesire(carte.description)}</p>
             }
+        </div>
+        <div className="carte-pied">
+            <span>{carte.categorie}</span>
         </div>
     </div>
 }
