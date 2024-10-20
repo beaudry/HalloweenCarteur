@@ -6,16 +6,16 @@ import qui from '../images/qui.png';
 import verite from '../images/verite.png';
 
 function obtenirCheminImage(categorie: Categorie) {
-    if (categorie === Categorie.qui) {
-        return qui;
-    }
-
     if (categorie === Categorie.chaos) {
         return chaos;
     }
 
     if (categorie === Categorie.defi) {
         return defi;
+    }
+
+    if (categorie === Categorie.qui) {
+        return qui;
     }
 
     if (categorie === Categorie.verite) {
