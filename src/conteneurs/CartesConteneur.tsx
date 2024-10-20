@@ -9,9 +9,9 @@ function obtenirCartesDeLaCategorie(categorie: Categorie) {
   return cartes.filter(carte => carte.categorie === categorie);
 }
 
-const cartesAide = obtenirCartesDeLaCategorie(Categorie.qui);
 const cartesChaos = obtenirCartesDeLaCategorie(Categorie.chaos);
 const cartesDefi = obtenirCartesDeLaCategorie(Categorie.defi);
+const cartesQui = obtenirCartesDeLaCategorie(Categorie.qui);
 const cartesVerite = obtenirCartesDeLaCategorie(Categorie.verite);
 const cartesSansTitre = cartes.filter(carte => !carte.titre);
 
@@ -38,9 +38,9 @@ function CartesConteneur() {
         </div>
 
         <div id="conteneur-boutons">
-          <Pigeur cartes={cartesAide} titre={Categorie.qui} />
           <Pigeur cartes={cartesChaos} titre={Categorie.chaos} />
           <Pigeur cartes={cartesDefi} titre={Categorie.defi} />
+          <Pigeur cartes={cartesQui} titre={Categorie.qui} />
           <Pigeur cartes={cartesVerite} titre={Categorie.verite} />
         </div>
       </div>
