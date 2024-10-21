@@ -50,7 +50,7 @@ h2 {
   break-inside: avoid;
   margin-bottom: 2rem;
   display: flex;
-  gap: 2px;
+  gap: 3px;
 }
 
 @media print {
