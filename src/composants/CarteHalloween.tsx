@@ -15,7 +15,7 @@ function ajouterLesEspacesSiDesire(chaineAAjuster: string) {
         return chaineAAjuster;
     }
 
-    return chaineAAjuster.replace(/([!?])$/, espaceFineInsecable + "$1");
+    return chaineAAjuster.replace(/([!?%])/, espaceFineInsecable + "$1");
 
 }
 
@@ -34,7 +34,7 @@ function CarteHalloween({ carte, verso }: CarteHalloweenProps) {
                 <ul>
                     {carte.description.map(itemDescription => <li key={itemDescription}>{itemDescription}</li>)}
                 </ul>
-                : <p>{ajouterLesEspacesSiDesire(carte.description)}</p>
+                : <p dangerouslySetInnerHTML={{ __html: ajouterLesEspacesSiDesire(carte.description) }}></p>
             }
         </div>
         <div className="carte-pied">
