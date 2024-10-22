@@ -33,6 +33,8 @@ const cartes: Carte[] = [
     { categorie: Categorie.defi, cycle: "Improvisation", description: "Explique pourquoi les loup-garous sont des membres essentiels de notre société.", titre: "Citoyens à poils" },
     { categorie: Categorie.defi, cycle: "Improvisation", description: "Explique pourquoi les rats ont été faussement blâmés pour la peste bubonique.", titre: "Pandémie" },
     { categorie: Categorie.defi, cycle: "Improvisation", description: "On sait que le Diable est souvent représenté par une chèvre. Vend-nous le fromage qui en résulterait.", titre: "Dégoûtstation" },
+    { categorie: Categorie.defi, cycle: "Improvisation", description: "Avant de vendre son âme, ta cible te demande quels sont les petits caractères. Que lui dis-tu?", titre: "Mauvaises conditions" },
+    { categorie: Categorie.defi, cycle: "Improvisation", description: "Peux-tu nous expliquer pourquoi ton ombre n'a pas la même forme que toi?", titre: "Illusion" },
 
     { categorie: Categorie.defi, cycle: "Langage", description: "Communique seulement en utilisant plusieurs cris d'animaux jusqu'à ton prochain tour.", titre: "À l'abattoir" },
     { categorie: Categorie.defi, cycle: "Langage", description: "Ne dis plus un mot jusqu'à ton prochain tour.", titre: "Silence, mon agneau" },
