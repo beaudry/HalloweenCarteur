@@ -1,7 +1,7 @@
 enum Categorie {
-    aide = "Aide",
     chaos = "Chaos",
     defi = "Défi",
+    qui = "Qui?",
     verite = "Vérité",
 };
 

@@ -7,7 +7,7 @@
     height: 204px;
     display: flex;
     flex-direction: column;
-    padding: 0 0.75rem 0.75rem;
+    padding: 0.75rem 0.75rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -16,6 +16,8 @@
     position: absolute;
     left: 0;
     top: 0;
+    width: 300px;
+    height: 200px;
 }
 
 .filigrane {
@@ -24,10 +26,10 @@
     z-index: -1;
 }
 
-.carte-entete {
+.carte-pied {
     line-height: 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .carte-contenu {
